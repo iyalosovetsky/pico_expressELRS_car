@@ -59,10 +59,20 @@ class RobotCar:
 
     def move_reverse (self, turn):
         if turn>0:
-            self.turn_left()
-        elif turn<0:
-            self.turn_right()
+            self.left_motor_pin1.duty_u16(self.current_speed_left) # forward
+            self.left_motor_pin2.duty_u16(RobotCar.MIN_DUTY_CYCLE)
             
+            self.right_motor_pin1.duty_u16(RobotCar.MIN_DUTY_CYCLE) #backward
+            self.right_motor_pin2.duty_u16(self.current_speed_right)
+            
+            
+
+        elif turn<0:
+            self.left_motor_pin1.duty_u16(RobotCar.MIN_DUTY_CYCLE) #backward
+            self.left_motor_pin2.duty_u16(self.current_speed_left)
+
+            self.right_motor_pin1.duty_u16(self.current_speed_right) # forward
+            self.right_motor_pin2.duty_u16(RobotCar.MIN_DUTY_CYCLE)
 
 
     def stop(self):

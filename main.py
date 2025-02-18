@@ -1,8 +1,8 @@
 from robot_car import RobotCar
 from crsf import Crsf
 import utime
-from machine import UART, Pin
-uart = UART(1, baudrate=420000, bits=8, parity=None, stop=1, tx=Pin(8), rx=Pin(9))
+from machine import UART, Pin, ADC
+
 
 CRSF_SYNC = 0xC8
 CHANNELS=[0 for jj in range(16)]
@@ -84,6 +84,11 @@ RIGHT_MOTOR2_PIN_2 = 13
 MOTOR2_STBY = 11
 
 
+uart = UART(1, baudrate=420000, bits=8, parity=None, stop=1, tx=Pin(8), rx=Pin(9))
+analogue_input = ADC(28)
+
+
+
 motor_forw_pins = [LEFT_MOTOR1_PIN_1, LEFT_MOTOR1_PIN_2, RIGHT_MOTOR1_PIN_1, RIGHT_MOTOR1_PIN_2,MOTOR1_STBY]
 motor_back_pins = [LEFT_MOTOR2_PIN_1, LEFT_MOTOR2_PIN_2, RIGHT_MOTOR2_PIN_1, RIGHT_MOTOR2_PIN_2,MOTOR2_STBY]
 
@@ -128,13 +133,34 @@ old_speed=0
 old_arrow=0
 old_turn=0
 old_turn_val=0
+ii = 0
+BAT_DIA=0.8*2 #v from 3.35 to 4.15 (100..0 prc)
+BAT_FULL =4.2*2 #v 2S bat
+BAT_CAPA =2900 #v 2S bat
+VOLTAGE_K=3.3 * 3.232 / 65535
+
+
 if __name__ == '__main__':
     try:
         while True:
+          ii+=1
           if crsf1.tick()!=1 :
               if crsf1.newRCData<=-9:
                 utime.sleep_ms(10)
-              
+          if ii%100==0:
+            v2sbat=analogue_input.read_u16()* VOLTAGE_K
+            prc2s=(BAT_DIA-(BAT_FULL-v2sbat))/BAT_DIA
+            if prc2s>1:
+                prc2s=1
+            elif prc2s<0:
+                prc2s=0
+            v_bat=int(round(v2sbat*10,0 ))
+            v_prc=int(round(prc2s*100,0 ))
+            v_cap=int(round(BAT_CAPA*prc2s ,0 ))
+            
+        
+            
+            crsf1.sentBattery(v_bat,122, v_cap,v_prc)# 18ma 23% 1.2 A 4.1V    
           
           #print('->',CHANNELS[E_SWITCH],CHANNELS[LEFT_VERTICAL],CHANNELS[LEFT_HORIZONTAL],CHANNELS[RIGHT_VERTICAL],CHANNELS[RIGHT_HORIZONTAL])
           arrow=0

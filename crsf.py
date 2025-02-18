@@ -21,6 +21,19 @@ class Crsf():
     #https://github.com/crsf-wg/crsf/wiki/Packet-Types
     VARIO = 0x07
     #https://github.com/crsf-wg/crsf/wiki/CRSF_FRAMETYPE_BATTERY_SENSOR
+    # int16_t voltage in dV (Big Endian)
+    # e.g. 25.2V sent as 0x00FC / 252
+    # e.g. 3.7V sent as 0x0025 / 37
+    # e.g. 3276.7V sent as 0x7FFF / 32767
+    # int16_t current in dA (Big Endian)
+    # e.g. 18.9A sent as 0x00BD / 189
+    # e.g. 109.4A sent as 0x0446 / 1094
+    # int24_t used capacity in mAh
+    # e.g. 2199mAh used sent as 0x0897 / 2199
+    # int8_t estimated battery remaining in percent (%)
+    # e.g. 100% full battery sent as 0x64 / 100
+    # e.g. 20% battery remaining sent as 0x14 / 20
+
     BATTERY_SENSOR = 0x08
     #https://github.com/crsf-wg/crsf/wiki/CRSF_FRAMETYPE_BARO_ALTITUDE
     BARO_ALT = 0x09
@@ -118,6 +131,14 @@ class Crsf():
         return self.newRCData
 
 
+    def sentBattery(self,p_voltage,p_current, p_capacity,p_percent):
+        buffer = bytearray([Crsf.CRSF_SYNC, 10, Crsf.BATTERY_SENSOR, p_voltage//256, p_voltage%256, p_current//256,p_current%256, 0,p_capacity//256,p_capacity%256,p_percent, 180])
+        buffer[-1]=Crsf.crc8_data(buffer[2:-1])
+        self.uart.write(buffer)
+        #self.uart.write(bytearray([Crsf.CRSF_SYNC,0x0B, Crsf.BATTERY_SENSOR,  0x00, 0x25, 0x00, 0xBD, 0x00, 0x08, 0x97,0x14, Crsf.crc8_data([0x08])]))
+
+
+
     def handleCrsfPacket(self):
         self.newRCData=-1
         self.ptype = self.data[2]
@@ -161,7 +182,17 @@ class Crsf():
             zz=''
             kk=self.data[3:25]  
             for ii in kk:
-                zz='{:0>{w}}'.format(bin(ii)[2:], w=8)+zz 
+                #zz='{:0>{w}}'.format(bin(ii)[2:], w=8)+zz
+                zz='{0:08b}'.format(ii)+zz
+
+                #https://github.com/alexeystn/python-scripts/blob/master/crossfire/decode_crsf_protocol.py
+                # if packet[0] == 22:  # 0x16 = CRSF_FRAMETYPE_RC_CHANNELS_PACKED
+                #     packet = packet[1:-1]  # remove type and crc
+                #     packet_bin_8 = ['{0:08b}'.format(i)[::-1] for i in packet]  # [::-1] reverse
+                #     packet_bin_full = ''.join(packet_bin_8)
+                #     packet_bin_11 = [packet_bin_full[11*i:11*(i+1)] for i in range(16)]
+                #     rc_packet = [int(b[::-1], 2) for b in packet_bin_11]
+
             if zz!=self.rc and len(zz)==176:
                 self.channels=[sum([(1<<(10-ii) if (zz[(15-jj)*11:(16-jj)*11])[ii]=='1' else 0) for ii in range(11)]) for jj in range(16) ]
                 #print('->',CHANNELS[E_SWITCH],CHANNELS[LEFT_VERTICAL],CHANNELS[LEFT_HORIZONTAL],CHANNELS[RIGHT_VERTICAL],CHANNELS[RIGHT_HORIZONTAL])

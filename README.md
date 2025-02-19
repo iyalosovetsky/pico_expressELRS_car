@@ -2,8 +2,8 @@
 
 
 
- This project has code to control the car platform by express ELRS receiver like betafpv nano receiver and TX12 RC. 
- The car is a four wheel drive platform powered by 4 PWM controlled motors. The code implements CRSF protocol to send command and retrieve telemetry data (battery state).
+ This project has code to control the car platform by express ELRS receiver like betafpv nano receiver and TX12 RC . 
+ The car is a four wheel drive platform powered by 4 PWM controlled motors. The code implements CRSF protocol on Raspberry Pico W to send command and retrieve telemetry data (battery state). 
 
 [![Watch the video](https://img.youtube.com/vi/cAvKrcaPvDQ/default.jpg)](https://youtu.be/cAvKrcaPvDQ)
 

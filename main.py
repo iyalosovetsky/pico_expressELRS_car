@@ -136,8 +136,9 @@ old_turn_val=0
 ii = 0
 BAT_DIA=0.8*2 #v from 3.35 to 4.15 (100..0 prc)
 BAT_FULL =4.2*2 #v 2S bat
-BAT_CAPA =2900 #v 2S bat
-VOLTAGE_K=3.3 * 3.232 / 65535
+BAT_CAPA =2900 #mAh 
+#https://stfn.pl/blog/22-pico-battery-level/
+VOLTAGE_K=3.3 * 3.232 / 65535 # Vref 3.3V 12bit 3.232 resistor divider
 
 
 if __name__ == '__main__':

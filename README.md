@@ -28,4 +28,4 @@ https://arduino.ua/prod6108-peremikach-kryglii-kcd1-201-2p-on-off-2-h-kontaktnii
 
 
 
-see my project to control by bluetoth joystick  https://github.com/iyalosovetsky/robocar 
+see my project to control by bluetouth joystick  https://github.com/iyalosovetsky/robocar 

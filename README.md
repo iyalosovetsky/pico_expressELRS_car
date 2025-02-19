@@ -3,6 +3,7 @@
 This project has code for  control car platform by express ELRS receiver like betafpv nano receiver and TX12 RC.
 The Car is platform with 4wd wheel driving by 4 PWM controlled motors.
 
+[![demo](https://img.youtube.com/vi/cAvKrcaPvDQ?si=--G-0IcTNndGMqua/0.jpg)](https://www.youtube.com/watch?v=cAvKrcaPvDQ?si=--G-0IcTNndGMqua)
 
 [youtube_image](https://youtube.com/shorts/cAvKrcaPvDQ?si=--G-0IcTNndGMqua)
 

@@ -3,6 +3,9 @@
 This project has code for  control car platform by express ELRS receiver like betafpv nano receiver and TX12 RC.
 The Car is platform with 4wd wheel driving by 4 PWM controlled motors.
 
+
+[![Watch the video][youtube_image]](https://youtube.com/shorts/cAvKrcaPvDQ?si=--G-0IcTNndGMqua)
+
 parts 
 
 https://arduino.ua/prod1908-robo-platforma-4-h-kolesnaya-dvyhpalybnaya-polnoprivodnaya
@@ -20,4 +23,6 @@ https://arduino.ua/prod3697-draiver-dvigatelei-dvyhkanalnii-drv8833
 https://arduino.ua/prod6108-peremikach-kryglii-kcd1-201-2p-on-off-2-h-kontaktnii-6a-220v-bilii
 
 
-https://youtube.com/shorts/cAvKrcaPvDQ?si=--G-0IcTNndGMqua
+
+
+

@@ -4,7 +4,7 @@ This project has code for  control car platform by express ELRS receiver like be
 The Car is platform with 4wd wheel driving by 4 PWM controlled motors.
 
 
-[![Watch the video][youtube_image]](https://youtube.com/shorts/cAvKrcaPvDQ?si=--G-0IcTNndGMqua)
+[youtube_image](https://youtube.com/shorts/cAvKrcaPvDQ?si=--G-0IcTNndGMqua)
 
 parts 
 

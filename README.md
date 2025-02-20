@@ -16,8 +16,7 @@ parts
 [![Raspberry Pico W](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg)](
 https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV)
 
-[![optical sensor](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg)](
-https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV](https://arduino.ua/prod2290-opticheskii-datchik-prepyatstviya-kompaktnii)
+[![optical sensor](https://arduino.ua/products_pictures/large_ADC233-1.jpg)](https://arduino.ua/prod2290-opticheskii-datchik-prepyatstviya-kompaktnii)
 
 
 

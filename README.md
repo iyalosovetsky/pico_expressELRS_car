@@ -25,10 +25,7 @@ https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR
 [![2x 18650 3000mAh](https://arduino.ua/products_pictures/large_tmp268_1.jpg)](https://arduino.ua/prod6971-akymylyator-lg-hg2-18650-3000mach-bez-zahisty-z-rozbirannya-bez-vivodiv)
 
 
-
-
-
-https://arduino.ua/prod3697-draiver-dvigatelei-dvyhkanalnii-drv8833
+[![PWM driver drv8833](https://arduino.ua/products_pictures/large_arc209_1.jpg)](https://arduino.ua/prod3697-draiver-dvigatelei-dvyhkanalnii-drv8833)
 
 https://arduino.ua/prod6108-peremikach-kryglii-kcd1-201-2p-on-off-2-h-kontaktnii-6a-220v-bilii
 

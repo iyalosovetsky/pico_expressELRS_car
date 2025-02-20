@@ -22,7 +22,11 @@ https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR
 
 [![2S charger and bms ip2326](https://arduino.ua/products_pictures/large_aoc862_1.jpg)](https://arduino.ua/prod5916-modyl-bms-li-ion-2s-ip2326)
 
-https://arduino.ua/prod6971-akymylyator-lg-hg2-18650-3000mach-bez-zahisty-z-rozbirannya-bez-vivodiv
+[![2x 18650](https://arduino.ua/products_pictures/large_tmp268_1.jpg)](https://arduino.ua/prod5916-modyl-bms-li-ion-2s-ip2326](https://arduino.ua/prod6971-akymylyator-lg-hg2-18650-3000mach-bez-zahisty-z-rozbirannya-bez-vivodiv)
+
+
+
+
 
 https://arduino.ua/prod3697-draiver-dvigatelei-dvyhkanalnii-drv8833
 

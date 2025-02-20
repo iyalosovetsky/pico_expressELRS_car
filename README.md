@@ -6,16 +6,17 @@
  The car is a four wheel drive platform powered by 4 PWM controlled motors. The code implements CRSF protocol on Raspberry Pico W to send command and retrieve telemetry data (battery state). 
 
 
-| Platform                            | Start here                                                        | Further info              | 
+| Part name                            | Start here                                                        | Further info              | 
 |-------------------------------------|-------------------------------------------------------------------|---------------------------|
-|Receiver BETAFPV NANO 2400                       | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Link](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)       |
-| Arduino using ESP-IDF toolchain     | [Template project][esp-idf-bluepad32-arduino]                     | [Doc][plat_arduino]       |
-| Arduino + NINA coprocessor          | [Arduino Library][bp32-arduino]                                   | [Doc][plat_nina]          |
-| CircuitPython + AirLift coprocessor | [CircuitPython Library][bp32-circuitpython]                       | [Doc][plat_airlift]       |
-| Pico W                              | [Pico W example][pico-w-example]                                  | [Doc][plat_picow_picosdk] |
-| ESP-IDF                             | [ESP32 example][esp32-example]                                    | [Doc][plat_esp32_espidf]  |
-| Posix (Linux, macOS)                | [Posix example][posix-example]                                    | [Doc][plat_custom]        |                                                                                                           |
-| Unijoysticle                        | [Unijoysticle2][unijoysticle2]                                    | [Doc][plat_unijoysticle]  |                                                                                                           |
+|Receiver BETAFPV NANO 2400           | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Link](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)       |
+|car platform                         | [![car platform](https://arduino.ua/products_pictures/large_ARC148.jpg)](https://arduino.ua/prod1908-robo-platforma-4-h-kolesnaya-dvyhpalybnaya-polnoprivodnaya) | [Link]([https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html](https://arduino.ua/prod1908-robo-platforma-4-h-kolesnaya-dvyhpalybnaya-polnoprivodnaya)       |
+|Raspberry Pico W                     | [![Raspberry Pico W](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg)](
+https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV) | [Link]([https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html](https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV)       |
+|optical sensor                       | [![optical sensor](https://arduino.ua/products_pictures/large_ADC233-1.jpg)](https://arduino.ua/prod2290-opticheskii-datchik-prepyatstviya-kompaktnii) | [Link]([https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html](https://arduino.ua/prod2290-opticheskii-datchik-prepyatstviya-kompaktnii)       |
+|Receiver BETAFPV NANO 2400           | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Link](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)       |
+|Receiver BETAFPV NANO 2400           | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Link](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)       |
+|Receiver BETAFPV NANO 2400           | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Link](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)       |
+
 | MightyMiggy                         | [Unijoysticle for Amiga][unijoysticle_sukko]                      | [Doc][plat_mightymiggy]   |                                                                                                           |
 
 

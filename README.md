@@ -9,7 +9,7 @@
 
 parts 
 
-[Receiver BETAFPV NANO 2400](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)
+[![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html)
 
 https://arduino.ua/prod1908-robo-platforma-4-h-kolesnaya-dvyhpalybnaya-polnoprivodnaya
 

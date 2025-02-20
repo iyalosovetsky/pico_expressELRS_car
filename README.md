@@ -5,6 +5,21 @@
  This project has code to control the car platform by express ELRS receiver like betafpv nano receiver and TX12 RC . 
  The car is a four wheel drive platform powered by 4 PWM controlled motors. The code implements CRSF protocol on Raspberry Pico W to send command and retrieve telemetry data (battery state). 
 
+
+| Platform                            | Start here                                                        | Further info              | 
+|-------------------------------------|-------------------------------------------------------------------|---------------------------|
+|Receiver BETAFPV NANO 2400                       | [![Receiver BETAFPV NANO 2400](https://www.expresslrs.org/assets/images/betaFPVrx2400.png)](https://prom.ua/ua/p2130654195-priemnik-elrs-24ghz.html) | [Doc][plat_arduino]       |
+| Arduino using ESP-IDF toolchain     | [Template project][esp-idf-bluepad32-arduino]                     | [Doc][plat_arduino]       |
+| Arduino + NINA coprocessor          | [Arduino Library][bp32-arduino]                                   | [Doc][plat_nina]          |
+| CircuitPython + AirLift coprocessor | [CircuitPython Library][bp32-circuitpython]                       | [Doc][plat_airlift]       |
+| Pico W                              | [Pico W example][pico-w-example]                                  | [Doc][plat_picow_picosdk] |
+| ESP-IDF                             | [ESP32 example][esp32-example]                                    | [Doc][plat_esp32_espidf]  |
+| Posix (Linux, macOS)                | [Posix example][posix-example]                                    | [Doc][plat_custom]        |                                                                                                           |
+| Unijoysticle                        | [Unijoysticle2][unijoysticle2]                                    | [Doc][plat_unijoysticle]  |                                                                                                           |
+| MightyMiggy                         | [Unijoysticle for Amiga][unijoysticle_sukko]                      | [Doc][plat_mightymiggy]   |                                                                                                           |
+
+
+
 [![Watch the video](https://img.youtube.com/vi/cAvKrcaPvDQ/default.jpg)](https://youtu.be/cAvKrcaPvDQ)
 
 parts 

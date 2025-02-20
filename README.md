@@ -8,7 +8,7 @@
 
 The parts 
 
-| Part name                            | Start here                                                        | Further info              | 
+| Part name                            |                                                         | Further info              | 
 |-------------------------------------|-------------------------------------------------------------------|---------------------------|
 |Raspberry Pico W                     | [![Raspberry Pico W](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg)](https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV) | [Link](https://evo.net.ua/ru/mikrokontroller-raspberry-pi-pico-w/?srsltid=AfmBOopUA4QeR49kMoKL6BeQcgUpomg1QyBUS0xVd83PSJlIUxghn0VV) |
 |RadioMaster TX12 MKII ExpressLRS Edge TX   | [![RadioMaster TX12 MKII ExpressLRS Edge TX](https://brain.com.ua/static/images/prod_img/9/5/U0846495_big_1739048900.jpg)](https://brain.com.ua/ukr/Pult_upravlinnya_dlya_drona_RadioMaster_TX12_MKII_ExpressLPS_Edge_TX_HP01570032-M2-p1044984.html?utm_content=shopping&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHaluyF0pBA9Hv_9k_8fUJQQ3mH0yfzvPo3ofY5IHeKnd9vogtm-17KQaAj6fEALw_wcB) | [Link](https://brain.com.ua/ukr/Pult_upravlinnya_dlya_drona_RadioMaster_TX12_MKII_ExpressLPS_Edge_TX_HP01570032-M2-p1044984.html?utm_content=shopping&gad_source=1&gclid=Cj0KCQiAwtu9BhC8ARIsAI9JHaluyF0pBA9Hv_9k_8fUJQQ3mH0yfzvPo3ofY5IHeKnd9vogtm-17KQaAj6fEALw_wcB) |
